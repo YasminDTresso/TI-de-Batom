@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <!--COLOCAR FAV ICON-->
-
-
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
     <!--CDN BOOTSTRAP - CSS E JAVASCRIPT-->
     <link
@@ -22,71 +20,117 @@
       crossorigin="anonymous"
     ></script>
 
+    <!--CDN UNICONS-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
       /*Colocar estilos exclusivos dessa page aqui! =)*/
-
     </style>
   </head>
   <body>
-
     <div class="bg-img">
+      <nav class="navbar my-nav-index navbar-expand-md">
+        <div class="container">
+          <a href="" class="navbar-brand"
+            ><img
+              src="assets/logo.png"
+              alt="logo-ti-batom"
+              style="height: 45px"
+          /></a>
 
-        <nav class="navbar my-nav-index navbar-expand-md">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              class="uil uil-bars"
+              style="font-size: 40px; color: var(--rosa-escuro)"
+            ></span>
+          </button>
 
-            <div class="container">
-    
-              <a href="" class="navbar-brand">TI BATOM</a>
-    
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-    
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-    
-                <ul class="navbar-nav">
-               
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Home</a>
-                    </li>
-    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Sobre Nós
-                        </a>
-    
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Quem Somos</a></li>
-                            <li><a class="dropdown-item" href="#">Redes Sociais</a></li>
-                          </ul>
-    
-                    </li>
-    
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Notícias</a>
-                    </li>
-    
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Parceiros</a>
-                    </li>
-    
-                    <li class="nav-item d-flex">
-                        <button class="btn btn-sm btn-outline-secondary" type="button">FAÇA PARTE DA COMUNIDADE</button>
-                    </li>
+          <div
+            class="collapse navbar-collapse justify-content-around flex-grow-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="sobre-nos"
+                >
+                  Sobre Nós
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Quem Somos</a></li>
+                  <li><a class="dropdown-item" href="#">Redes Sociais</a></li>
                 </ul>
-    
-              </div>
-    
-            </div>
-    
-        </nav>
+              </li>
 
+              <li class="nav-item">
+                <a href="" class="nav-link">Notícias</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="" class="nav-link">Parceiros</a>
+              </li>
+
+              <li class="nav-item d-flex">
+                <button
+                  class="btn btn-sm"
+                  style="background-color: var(--rosa-escuro)"
+                  type="button"
+                >
+                  FAÇA PARTE
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row ">
+          <div class="col ">
+            <h1>T.I DE BATOM</h1>
+            <h3>INSPIRANDO MULHERES NAS TECNOLOGIA</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              possimus tenetur maxime illo accusamus vel voluptatum autem
+              reprehenderit explicabo libero beatae doloribus nemo, repudiandae
+              doloremque iure, eum at praesentium eaque.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+    <script>
+      const linkSobreNos = document.querySelector("#sobre-nos");
 
-
-
-
+      linkSobreNos.addEventListener("click", () => {
+        if (linkSobreNos.classList.contains("show")) {
+          linkSobreNos.classList.add("unshow");
+        }
+      });
+    </script>
   </body>
 </html>

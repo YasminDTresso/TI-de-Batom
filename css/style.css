@@ -20,8 +20,10 @@ body{
     background-color: var(--offwhite);
 }
 
+/*Estilos referentes a navbar do index/home*/
 .my-nav-index{
     background-image: linear-gradient(to bottom, rgba(21,21,21,1), rgba(21,21,21,0));
+    font-weight: bold;
 }
 
 .my-nav-index .nav-item .active{
@@ -32,13 +34,18 @@ body{
     color: var(--branco);
 }
 
-.my-nav-index .nav-link:hover, .my-nav-index .nav-link:focus{
+/*.my-nav-index .nav-link:hover, .my-nav-index .nav-link:focus{
+    color: var(--rosa-escuro);
+}*/
+
+.my-nav-index .nav-link.show{
     color: var(--rosa-escuro);
 }
 
-.my-nav-index .navbar-nav .nav-link.active, .my-nav-index .navbar-nav .nav-link.show{
-    color: var(--rosa-escuro);
+.my-nav-index .navbar-nav .nav-link.active, .my-nav-index .navbar-nav .nav-link .unshow{
+    color: var(--branco)
 }
+
 
 .my-nav-index .dropdown-menu{
     background-color: var(--preto-claro);
@@ -52,6 +59,19 @@ body{
 .my-nav-index .dropdown-item:hover{
     background-color: var(--preto-claro);
     color: var(--rosa-escuro);
+}
+
+.my-nav-index .navbar-toggler, .my-nav-index .navbar-toggler:focus{
+    padding: 0;
+    border: none;
+}
+
+.my-nav-index .navbar-toggler,
+.my-nav-index .navbar-toggler:focus,
+.my-nav-index .navbar-toggler:active{
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 .bg-img{
