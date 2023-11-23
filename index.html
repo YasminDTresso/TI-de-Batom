@@ -31,6 +31,114 @@
 
     <style>
       /*Colocar estilos exclusivos dessa page aqui! =)*/
+
+      /*Estilos referentes a navbar do index/home*/
+.my-nav-index{
+    background-image: linear-gradient(to bottom, rgba(21,21,21,1), rgba(21,21,21,0));
+}
+
+.my-nav-index .nav-link:hover{
+    color: var(--rosa-escuro);
+}
+
+.my-nav-index .nav-item .active{
+    color: var(--rosa-escuro);
+}
+
+.my-nav-index .nav-link, .my-nav-index .navbar-brand, .my-nav-index button{
+    color: var(--branco);
+    font-weight: bold;
+}
+
+.my-nav-index button:hover{
+    color: var(--preto-claro);
+}
+
+.my-nav-index .nav-link.show{
+    color: var(--rosa-escuro);
+}
+
+.my-nav-index .navbar-nav .nav-link .unshow{
+    color: var(--branco)
+}
+
+
+.my-nav-index .dropdown-menu{
+    background-color: var(--preto-claro);
+    border-color: var(--rosa-escuro);
+}
+
+.my-nav-index .dropdown-item{
+    color: var(--branco);
+}
+
+.my-nav-index .dropdown-item:hover{
+    background-color: var(--preto-claro);
+    color: var(--rosa-escuro);
+}
+
+.my-nav-index .navbar-toggler, .my-nav-index .navbar-toggler:focus{
+    padding: 0;
+    border: none;
+}
+
+.my-nav-index .navbar-toggler,
+.my-nav-index .navbar-toggler:focus,
+.my-nav-index .navbar-toggler:active{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.bg-container-nav{
+    background-image: linear-gradient(to bottom, rgba(21,21,21,1), rgba(21,21,21,0.8));
+}
+
+.bg-img{
+    background-image: url(assets/Rectangle\ 1.png);
+    height: 55vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introducao-row{
+    height: 42.8vh;
+}
+
+/*.introducao-row h1{
+    font-size: 5.9vw;
+}
+
+.introducao-row h3{
+    font-size: 2.5vw;
+}
+
+.introducao-row p{
+    font-size: 2.3vmin;
+}*/
+
+@media (max-width: 768px) { 
+    .my-nav-index{
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .my-nav-index .nav-link, .my-nav-index .navbar-brand, .my-nav-index button{
+       margin: 0.5rem;
+    }
+
+    .introducao-row{
+        height: 55vh;
+    }
+
+    .introducao-row h1{
+        margin-top: 4rem;
+    }
+
+}
+
     </style>
   </head>
   <body>
