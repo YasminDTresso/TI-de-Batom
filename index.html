@@ -36,7 +36,7 @@
   <body>
     <div class="bg-img">
       <nav class="navbar my-nav-index navbar-expand-md">
-        <div class="container">
+        <div class="container" id="container-nav-index">
           <a href="" class="navbar-brand"
             ><img
               src="assets/logo.png"
@@ -52,6 +52,7 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            id="btn-nav-link"
           >
             <span
               class="uil uil-bars"
@@ -63,7 +64,7 @@
             class="collapse navbar-collapse justify-content-around flex-grow-0"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav fs-5">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="">Home</a>
               </li>
@@ -80,7 +81,7 @@
                   Sobre Nós
                 </a>
 
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu fs-6">
                   <li><a class="dropdown-item" href="#">Quem Somos</a></li>
                   <li><a class="dropdown-item" href="#">Redes Sociais</a></li>
                 </ul>
@@ -95,36 +96,62 @@
               </li>
 
               <li class="nav-item d-flex">
-                <button
-                  class="btn btn-sm"
-                  style="background-color: var(--rosa-escuro)"
-                  type="button"
-                >
-                  FAÇA PARTE
-                </button>
+                <a href="nav-link">
+                  <button
+                    class="btn btn-sm m-md-1 fs-5"
+                    style="background-color: var(--rosa-escuro)"
+                    type="button"
+                  >
+                    FAÇA PARTE
+                  </button>
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div class="container">
-        <div class="row ">
-          <div class="col ">
-            <h1>T.I DE BATOM</h1>
-            <h3>INSPIRANDO MULHERES NAS TECNOLOGIA</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              possimus tenetur maxime illo accusamus vel voluptatum autem
-              reprehenderit explicabo libero beatae doloribus nemo, repudiandae
-              doloremque iure, eum at praesentium eaque.
-            </p>
+      <div class="container" style="min-height: 100%">
+        <div class="row align-items-center introducao-row">
+          <div class="col-12 d-flex.flex-column.justify-content-center">
+            <div
+              class="card"
+              style="background-color: transparent; border: none"
+            >
+              <h1 class="display-1 fw-bold" style="color: var(--rosa-escuro)">
+                T.I DE BATOM
+              </h1>
+              <h3 class="display-6 fw-bold" style="color: var(--branco)">
+                Inspirando
+                <small style="color: var(--rosa-claro)">mulheres</small> na
+                <small style="color: var(--rosa-claro)">tecnologia</small>.
+              </h3>
+              <p class="fs-4 lh-sm" style="color: var(--branco)">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                possimus tenetur maxime illo accusamus vel voluptatum autem
+                reprehenderit explicabo libero beatae doloribus nemo,
+                repudiandae doloremque iure, eum at praesentium eaque.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <script>
       const linkSobreNos = document.querySelector("#sobre-nos");
+      const btnNavLink = document.querySelector("#btn-nav-link");
+      const containerNavIndex = document.querySelector("#container-nav-index");
+
+      btnNavLink.addEventListener("click", () => {
+
+          if(containerNavIndex.classList.contains("bg-container-nav")){
+              containerNavIndex.classList.remove("bg-container-nav");
+          }else{
+            containerNavIndex.classList.add("bg-container-nav");
+          }
+
+      });
 
       linkSobreNos.addEventListener("click", () => {
         if (linkSobreNos.classList.contains("show")) {
