@@ -32,113 +32,125 @@
     <style>
       /*Colocar estilos exclusivos dessa page aqui! =)*/
 
-      /*Estilos referentes a navbar do index/home*/
-.my-nav-index{
-    background-image: linear-gradient(to bottom, rgba(21,21,21,1), rgba(21,21,21,0));
-}
+      /*=======NavBar INDEX=======*/
+      .my-nav-index {
+        background-image: linear-gradient(
+          to bottom,
+          rgba(21, 21, 21, 1),
+          rgba(21, 21, 21, 0)
+        );
+      }
 
-.my-nav-index .nav-link:hover{
-    color: var(--rosa-escuro);
-}
+      .my-nav-index .nav-link:hover {
+        color: var(--rosa-escuro);
+      }
 
-.my-nav-index .nav-item .active{
-    color: var(--rosa-escuro);
-}
+      .my-nav-index .nav-item .active {
+        color: var(--rosa-escuro);
+      }
 
-.my-nav-index .nav-link, .my-nav-index .navbar-brand, .my-nav-index button{
-    color: var(--branco);
-    font-weight: bold;
-}
+      .my-nav-index .nav-link,
+      .my-nav-index .navbar-brand,
+      .btn-faca-parte {
+        color: var(--branco);
+        font-weight: bold;
+      }
 
-.my-nav-index button:hover{
-    color: var(--preto-claro);
-}
+      .btn-faca-parte:hover {
+        color: var(--preto-claro);
+      }
 
-.my-nav-index .nav-link.show{
-    color: var(--rosa-escuro);
-}
+      .my-nav-index .nav-link.show {
+        color: var(--rosa-escuro);
+      }
 
-.my-nav-index .navbar-nav .nav-link .unshow{
-    color: var(--branco)
-}
+      .my-nav-index .navbar-nav .nav-link .unshow {
+        color: var(--branco);
+      }
 
+      .my-nav-index .dropdown-menu {
+        background-color: var(--preto-claro);
+        border-color: var(--rosa-escuro);
+      }
 
-.my-nav-index .dropdown-menu{
-    background-color: var(--preto-claro);
-    border-color: var(--rosa-escuro);
-}
+      .my-nav-index .dropdown-item {
+        color: var(--branco);
+      }
 
-.my-nav-index .dropdown-item{
-    color: var(--branco);
-}
+      .my-nav-index .dropdown-item:hover {
+        background-color: var(--preto-claro);
+        color: var(--rosa-escuro);
+      }
 
-.my-nav-index .dropdown-item:hover{
-    background-color: var(--preto-claro);
-    color: var(--rosa-escuro);
-}
+      .my-nav-index .navbar-toggler,
+      .my-nav-index .navbar-toggler:focus {
+        padding: 0;
+        border: none;
+      }
 
-.my-nav-index .navbar-toggler, .my-nav-index .navbar-toggler:focus{
-    padding: 0;
-    border: none;
-}
+      .my-nav-index .navbar-toggler,
+      .my-nav-index .navbar-toggler:focus,
+      .my-nav-index .navbar-toggler:active {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
 
-.my-nav-index .navbar-toggler,
-.my-nav-index .navbar-toggler:focus,
-.my-nav-index .navbar-toggler:active{
-    outline: none;
-    border: none;
-    box-shadow: none;
-}
+      .bg-container-nav {
+        background-image: linear-gradient(
+          to bottom,
+          rgba(21, 21, 21, 1),
+          rgba(21, 21, 21, 0.8)
+        );
+      }
 
-.bg-container-nav{
-    background-image: linear-gradient(to bottom, rgba(21,21,21,1), rgba(21,21,21,0.8));
-}
+      .bg-img {
+        background-image: url(assets/Rectangle\ 1.png);
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
-.bg-img{
-    background-image: url(assets/Rectangle\ 1.png);
-    height: 55vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+      .introducao-row {
+        height: 92.3vh;
+      }
 
-.introducao-row{
-    height: 42.8vh;
-}
+      /*=======SECTIONS=======*/
 
-/*.introducao-row h1{
-    font-size: 5.9vw;
-}
+      .container-fluid section .row .col-12{
+        padding: 5rem 10rem;
+      }
 
-.introducao-row h3{
-    font-size: 2.5vw;
-}
+      .redes-sociais {
+        background-color: var(--branco);
+      }
 
-.introducao-row p{
-    font-size: 2.3vmin;
-}*/
+      .noticias {
+        background-color: var(--branco);
+      }
 
-@media (max-width: 768px) { 
-    .my-nav-index{
-        position: absolute;
-        width: 100%;
-        z-index: 9999;
-    }
+      @media (max-width: 768px) {
+        .my-nav-index {
+          position: absolute;
+          width: 100%;
+          z-index: 9999;
+        }
 
-    .my-nav-index .nav-link, .my-nav-index .navbar-brand, .my-nav-index button{
-       margin: 0.5rem;
-    }
+        .my-nav-index .nav-link,
+        .my-nav-index .navbar-brand,
+        .my-nav-index button {
+          margin-bottom: 0.2rem;
+        }
 
-    .introducao-row{
-        height: 55vh;
-    }
+        .introducao-row {
+          height: 100vh;
+        }
 
-    .introducao-row h1{
-        margin-top: 4rem;
-    }
-
-}
-
+        .introducao-row h1 {
+          margin-top: 4rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -204,9 +216,9 @@
               </li>
 
               <li class="nav-item d-flex">
-                <a href="nav-link">
+                <a href="" class="nav-link">
                   <button
-                    class="btn btn-sm m-md-1 fs-5"
+                    class="btn btn-sm fs-5 btn-faca-parte"
                     style="background-color: var(--rosa-escuro)"
                     type="button"
                   >
@@ -219,7 +231,7 @@
         </div>
       </nav>
 
-      <div class="container" style="min-height: 100%">
+      <div class="container">
         <div class="row align-items-center introducao-row">
           <div class="col-12 d-flex.flex-column.justify-content-center">
             <div
@@ -240,11 +252,158 @@
                 reprehenderit explicabo libero beatae doloribus nemo,
                 repudiandae doloremque iure, eum at praesentium eaque.
               </p>
+              <a href="">
+                <button
+                  class="btn btn-lg m-md-1 fs-3 btn-faca-parte"
+                  style="background-color: var(--rosa-escuro)"
+                  type="button"
+                >
+                  FAÇA PARTE DA COMUNIDADE
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="container-fluid">
+      <section class="quem-somos">
+      <div class="row justify-content-center">
+        <div class="col-12 d-flex align-items-center text-center justify-content-center">
+
+          <div class="card mb-3" style="width: 60vw">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title display-3">Quem somos</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="assets/logo_01.jpg" class="img-fluid rounded-end" alt="logo-ti-batom">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+      <section class="redes-sociais">
+        <div class="row">
+          <div class="col-12">
+            <div class="card" style="width: 18rem">
+              <img class="card-img-top" src="..." alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="parceiros">
+      <div class="row">
+        <div class="col-12">
+
+        </div>
+      </section>
+
+      <section class="noticias">
+      <div class="row">
+        <div class="col-12">
+            <div class="card" style="width: 18rem">
+              <img class="card-img-top" src="..." alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+    </div>
+      </div>
+
+    <footer class="p-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="my-col col-md-4 border-end border-end border-3 have-border"
+          >
+            <div class="brand">
+              <a class="text-decoration-none">
+                <img
+                  src="assets/logo.png"
+                  alt="logo-ti-batom"
+                  class="footer-brand mb-1"
+                />
+              </a>
+              <p>T.I de Batom</p>
+              <p>&copy; 2023</p>
+            </div>
+          </div>
+
+          <div
+            class="my-col col-md-4 d-flex align-items-center text-center border-end border-3 have-border"
+          >
+            <div class="contact">
+              <ul class="nav flex-column">
+                <li class="nav-item d-flex align-items-center">
+                  <i
+                    class="uil uil-envelope nav-item-icon"
+                    style="margin-right: 1rem"
+                  ></i>
+                  <p class="m-0">nossoemail@contato.com</p>
+                </li>
+
+                <li class="nav-item d-flex align-items-center">
+                  <i
+                    class="uil uil-phone nav-item-icon"
+                    style="margin-right: 1rem"
+                  ></i>
+                  <p class="m-0">(00) 0000-0000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="my-col col-md-4 d-flex align-items-center text-center">
+            <div class="follow">
+              <p>SEGUE A GENTE!</p>
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="" class="nav-link"
+                    ><i class="uil uil-instagram nav-item-icon"></i
+                  ></a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="" class="nav-link"
+                    ><i class="uil uil-facebook nav-item-icon"></i
+                  ></a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="" class="nav-link"
+                    ><i class="uil uil-twitter nav-item-icon"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script>
       const linkSobreNos = document.querySelector("#sobre-nos");
@@ -252,13 +411,11 @@
       const containerNavIndex = document.querySelector("#container-nav-index");
 
       btnNavLink.addEventListener("click", () => {
-
-          if(containerNavIndex.classList.contains("bg-container-nav")){
-              containerNavIndex.classList.remove("bg-container-nav");
-          }else{
-            containerNavIndex.classList.add("bg-container-nav");
-          }
-
+        if (containerNavIndex.classList.contains("bg-container-nav")) {
+          containerNavIndex.classList.remove("bg-container-nav");
+        } else {
+          containerNavIndex.classList.add("bg-container-nav");
+        }
       });
 
       linkSobreNos.addEventListener("click", () => {
