@@ -118,7 +118,16 @@
 
       /*=======SECTIONS=======*/
 
-      .container-fluid section .row .col-12{
+      section {
+        width: 100%;
+        background-size: cover;
+      }
+
+      section h1 {
+        color: var(--rosa-escuro);
+      }
+
+      .container-fluid section .row .col-12 {
         padding: 5rem 10rem;
       }
 
@@ -128,6 +137,38 @@
 
       .noticias {
         background-color: var(--branco);
+      }
+
+      .quem-somos .col-12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5rem;
+      }
+
+      .quem-somos .about-us-img, 
+      .social-media-link > img,
+      .partner-link > img  {
+        width: 25vw;
+        height: auto;
+        border-radius: 2rem;
+      }
+
+      .quem-somos .text-box button {
+        color: var(--branco);
+        background-color: var(--rosa-escuro);
+      }
+
+      .quem-somos .text-box button:hover {
+        color: var(--preto-claro);
+      }
+
+      .social-media-links,
+      .partners-links {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
       }
 
       @media (max-width: 768px) {
@@ -149,6 +190,39 @@
 
         .introducao-row h1 {
           margin-top: 4rem;
+        }
+
+        /*=======SECTIONS=======*/
+
+        .container-fluid {
+          padding: 0;
+        }
+
+        .container-fluid section .row .col-12 {
+          padding: 5rem 1rem;
+        }
+
+        .quem-somos .col-12 {
+          display: initial;
+        }
+
+        .social-media-links,
+        .partners-links {
+          display: grid;
+          margin-top: 2rem;
+        }
+
+        .social-media-link > img,
+        .partner-link > img {
+          width: 60vw;
+        }
+
+        .quem-somos .text-box button {
+          margin-bottom: 1rem;
+        }
+
+        .quem-somos .about-us-img {
+          width: 60vw;
         }
       }
     </style>
@@ -269,70 +343,139 @@
 
     <div class="container-fluid">
       <section class="quem-somos">
-      <div class="row justify-content-center">
-        <div class="col-12 d-flex align-items-center text-center justify-content-center">
-
-          <div class="card mb-3" style="width: 60vw">
-            <div class="row g-0">
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title display-3">Quem somos</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <img src="assets/logo_01.jpg" class="img-fluid rounded-end" alt="logo-ti-batom">
-              </div>
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <div class="text-box">
+              <h1 class="display-3 fw-bold text-uppercase">Quem Somos</h1>
+              <p class="fs-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+                amet debitis vitae magni, temporibus illo, optio officiis,
+                facilis assumenda eius placeat. Excepturi corporis sit eligendi,
+                vero labore exercitationem ad eum?
+              </p>
+              <button type="button" class="btn btn-lg fs-2 text-uppercase">
+                Saiba Mais
+              </button>
             </div>
-          </div>
 
+            <img
+              src="assets/logo_01.jpg"
+              alt="logo-ti-batom"
+              class="about-us-img"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
       <section class="redes-sociais">
-        <div class="row">
-          <div class="col-12">
-            <div class="card" style="width: 18rem">
-              <img class="card-img-top" src="..." alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="display-3 fw-bold text-uppercase">
+              Nossas Redes Sociais
+            </h1>
+            <div class="social-media-links">
+              <a href="" class="social-media-link"
+                ><img src="assets/logo_01.jpg" alt=""
+              /></a>
+              <a href="" class="social-media-link"
+                ><img src="assets/logo_01.jpg" alt=""
+              /></a>
+              <a href="" class="social-media-link"
+                ><img src="assets/logo_01.jpg" alt=""
+              /></a>
             </div>
           </div>
         </div>
       </section>
       <section class="parceiros">
-      <div class="row">
-        <div class="col-12">
-
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="display-3 fw-bold text-uppercase">Nossos Parceiros</h1>
+            <div class="partners-links">
+              <a href="" class="partner-link"
+                ><img src="assets/logo_01.jpg" alt=""
+              /></a>
+              <a href="" class="partner-link"
+                ><img src="assets/logo_01.jpg" alt=""
+              /></a>
+              <a href="" class="partner-link"
+                ><img src="assets/logo_01.jpg" alt=""
+              /></a>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="noticias">
-      <div class="row">
-        <div class="col-12">
-            <div class="card" style="width: 18rem">
-              <img class="card-img-top" src="..." alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1 class="display-3 fw-bold text-uppercase">Notícias</h1>
+
+            <div class="news-area d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <img src="#" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <img src="#" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <img src="#" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
               </div>
             </div>
-
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
-      </div>
 
     <footer class="p-5">
       <div class="container">
