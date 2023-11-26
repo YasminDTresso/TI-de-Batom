@@ -365,9 +365,11 @@
                 facilis assumenda eius placeat. Excepturi corporis sit eligendi,
                 vero labore exercitationem ad eum?
               </p>
-              <button type="button" class="btn btn-lg fs-2 text-uppercase" href="quem-somos.php">
-                Saiba Mais
-              </button>
+              <a class="text-decoration-none" href="quem-somos.php">
+                <button type="button" class="btn btn-lg fs-2 text-uppercase">
+                  Saiba Mais
+                </button>
+              </a>
             </div>
 
             <img

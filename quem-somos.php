@@ -30,6 +30,17 @@
     <link rel="stylesheet" href="css/style.css" />
     <style>
         /*Colocar estilos exclusivos dessa page aqui! =)*/
+
+        /*=======SECTIONS=======*/
+
+        .container-fluid section .row .col-12 {
+        padding: 5rem 10rem;
+        }
+
+        .o-que-acreditamos{
+          background-color: var(--preto-claro);
+        }
+
     </style>
 
 </head>
@@ -48,12 +59,69 @@ include "nav.html";
       <div class="col-12">
         <div class="banner">
         <div class="title-banner">
-        <h1 class="text-uppercase">Quem Somos</h1>
+        <h1 class="text-uppercase">Quem Somos Nós?</h1>
         </div>
         </div>
       </div>
       </section>
     </div>
+  </div>
+
+  <div class="container-fluid g-0">
+
+    <section class="quem-somos">
+      <div class="row">
+        <div class="col-12 d-flex">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sint eligendi nemo officiis labore nostrum reiciendis velit voluptates provident perferendis, laboriosam placeat, beatae, commodi doloremque aspernatur distinctio? Sunt, voluptas et?</p>
+           <img src="assets/logo.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="o-que-acreditamos">
+       <div class="row">
+         <div class="col-12 d-flex">
+
+          <img src="assets/logo.png" alt="">
+
+           <div class="text-box">
+            <h1 class="text-uppercase">O que acreditamos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ratione deleniti rerum unde velit enim voluptatem, voluptate, voluptatibus voluptates facere, laboriosam blanditiis dolorem provident ipsa quis odio. Culpa, quia amet.</p>
+           </div>
+
+         </div>
+       </div>
+    </section>
+
+    <section class="missao-visao-valores">
+      <div class="row">
+        <div class="col-12">
+
+        <h1>Missão, Visão e Valores</h1>
+
+        <div class="content-cards d-flex">
+        <div class="my-card">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
+          <img src="assets/logo.png" alt="">
+        </div>
+
+        <div class="my-card">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
+          <img src="assets/logo.png" alt="">
+        </div>
+
+        <div class="my-card">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
+          <img src="assets/logo.png" alt="">
+        </div>
+        
+        </div>
+
+        </div>
+      </div>
+
+    </section>
+
   </div>
 
 </div>

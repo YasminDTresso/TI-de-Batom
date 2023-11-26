@@ -48,7 +48,7 @@ include "nav.html";
       <div class="col-12">
         <div class="banner">
         <div class="title-banner">
-        <h1 class="text-uppercase">Parceiros</h1>
+        <h1 class="text-uppercase">Nossos Parceiros</h1>
         </div>
         </div>
       </div>
