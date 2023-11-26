@@ -40,6 +40,10 @@
 
     ?>
 
+    <div class="container">
+      <img src="assets/logo.png" alt="">
+    </div>
+
     <?php
     
     include "footer.html";
