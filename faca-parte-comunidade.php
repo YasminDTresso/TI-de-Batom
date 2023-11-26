@@ -41,17 +41,19 @@
 
     ?>
 
-    <div class="container-fluid g-0">
-      <div class="row">
-        <section class="faca-parte-comunidade">
-        <div class="col-12">
-          <div class="banner">
-          <div class="title-banner">
-          <h1 class="text-uppercase">Faça parte da comunidade</h1>
+    <div class="main">
+      <div class="container-fluid g-0">
+        <div class="row">
+          <section class="faca-parte-comunidade">
+          <div class="col-12">
+            <div class="banner">
+            <div class="title-banner">
+            <h1 class="text-uppercase">Faça parte da comunidade</h1>
+            </div>
+            </div>
           </div>
-          </div>
+          </section>
         </div>
-        </section>
       </div>
     </div>
 

@@ -40,19 +40,25 @@ include "nav.html";
 
 ?>
 
-<div class="container-fluid g-0">
-  <div class="row">
-    <section class="parceiros">
-    <div class="col-12">
-      <div class="banner">
-      <div class="title-banner">
-      <h1 class="text-uppercase">Parceiros</h1>
+<div class="main">
+
+  <div class="container-fluid g-0">
+    <div class="row">
+      <section class="parceiros">
+      <div class="col-12">
+        <div class="banner">
+        <div class="title-banner">
+        <h1 class="text-uppercase">Parceiros</h1>
+        </div>
+        </div>
       </div>
-      </div>
+      </section>
     </div>
-    </section>
   </div>
+
 </div>
+
+
 
 <?php
 
