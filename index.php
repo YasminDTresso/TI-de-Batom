@@ -272,7 +272,7 @@
           class="collapse navbar-collapse justify-content-around flex-grow-0"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav fs-5">
+          <ul class="navbar-nav fs-5 align-items-center">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.php" id="nav-home">Home</a>
             </li>
@@ -319,6 +319,8 @@
       </div>
     </nav>
 
+    <main>
+    
     <div class="container-fluid bg-img">
       <div class="row align-items-center introducao-row">
         <div class="col-12 d-flex flex-column justify-content-center">
@@ -350,7 +352,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="content container-fluid">
       <section class="quem-somos">
         <div class="row justify-content-center">
@@ -490,6 +492,7 @@
         </div>
       </section>
     </div>
+    </main>
 
     <?php
     

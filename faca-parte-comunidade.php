@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <style>
         /*Colocar estilos exclusivos dessa page aqui! =)*/
+
     </style>
 
 </head>
@@ -40,21 +41,27 @@
 
     ?>
 
-    <div class="container">
-      <img src="assets/logo.png" alt="">
+    <div class="container-fluid g-0">
+      <div class="row">
+        <section class="faca-parte-comunidade">
+        <div class="col-12">
+          <div class="banner">
+          <div class="title-banner">
+          <h1 class="text-uppercase">Faça parte da comunidade</h1>
+          </div>
+          </div>
+        </div>
+        </section>
+      </div>
     </div>
 
     <?php
     
     include "footer.html";
 
-   ?>
+    ?>
 
    <script src="script.js"></script>
-   <script>
-     const navActiveItem = document.querySelector('#nav-home');
 
-     navActiveItem.classList.add("nav-item-active");
-   </script>
 </body>
 </html>

@@ -18,15 +18,20 @@
 body {
     font-family: var(--fonte-padrao);
     background-color: var(--offwhite);
-    -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
-    scrollbar-width: none;
-    /* Firefox */
+    -ms-overflow-style: none;/* Internet Explorer 10+ */
+    scrollbar-width: none;/* Firefox */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 body::-webkit-scrollbar {
     display: none;
     /* Safari and Chrome */
+}
+
+main{
+    flex: 1;
 }
 
 /*
@@ -106,7 +111,7 @@ body::-webkit-scrollbar {
 footer {
     background-color: var(--preto-claro);
     color: var(--branco);
-    font-weight: bold;
+    margin-top: auto;
 }
 
 .footer-brand {
@@ -120,6 +125,19 @@ footer .nav .nav-item .nav-item-icon {
 
 footer .have-border {
     border-right: var(--bs-border-width) var(--bs-border-style) var(--rosa-escuro);
+}
+
+
+/*=======SECTIONS=======*/
+.col-12 .banner {
+    background-color: var(--rosa-escuro);
+    color: var(--branco);
+    padding: 2rem 1.5rem;
+}
+
+.col-12 .banner .title-banner h1 {
+    border-left: 0.4rem solid black;
+    padding-left: 0.3rem;
 }
 
 /*Samll screen*/
@@ -144,10 +162,10 @@ footer .have-border {
     /*
     =======Footer=======
     */
+
     footer .have-border {
         border-right: none;
         border-bottom: 1px solid var(--rosa-escuro);
-
     }
 
     footer .my-col {

@@ -34,6 +34,38 @@
 
 </head>
 <body>
-    Hello World!
+<?php
+    
+include "nav.html";
+
+?>
+
+<div class="container-fluid g-0">
+  <div class="row">
+    <section class="quem-somos">
+    <div class="col-12">
+      <div class="banner">
+      <div class="title-banner">
+      <h1 class="text-uppercase">Quem Somos</h1>
+      </div>
+      </div>
+    </div>
+    </section>
+  </div>
+</div>
+
+<?php
+
+include "footer.html";
+
+?>
+
+<script src="script.js"></script>
+<script>
+      const navActiveItem = document.querySelector('#nav-quem-somos');
+
+      navActiveItem.classList.add("nav-item-active");
+      linkSobreNos.classList.add("nav-item-active");
+</script>
 </body>
 </html>

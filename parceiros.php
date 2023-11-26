@@ -34,6 +34,37 @@
 
 </head>
 <body>
-    Hello World!
+<?php
+    
+include "nav.html";
+
+?>
+
+<div class="container-fluid g-0">
+  <div class="row">
+    <section class="parceiros">
+    <div class="col-12">
+      <div class="banner">
+      <div class="title-banner">
+      <h1 class="text-uppercase">Parceiros</h1>
+      </div>
+      </div>
+    </div>
+    </section>
+  </div>
+</div>
+
+<?php
+
+include "footer.html";
+
+?>
+
+<script src="script.js"></script>
+<script>
+      const navActiveItem = document.querySelector('#nav-parceiros');
+
+      navActiveItem.classList.add("nav-item-active");
+  </script>
 </body>
 </html>
