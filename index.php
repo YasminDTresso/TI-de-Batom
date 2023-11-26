@@ -45,7 +45,7 @@
         color: var(--rosa-escuro);
       }
 
-      .my-nav-index .nav-item .active {
+      .my-nav-index .nav-item .nav-item-active {
         color: var(--rosa-escuro);
       }
 
@@ -95,14 +95,6 @@
         box-shadow: none;
       }
 
-      .bg-container-nav {
-        background-image: linear-gradient(
-          to bottom,
-          rgba(21, 21, 21, 1),
-          rgba(21, 21, 21, 0.8)
-        );
-      }
-
       .my-nav-index .navbar-nav .nav-item.d-flex {
         justify-content: center;
       }
@@ -125,6 +117,10 @@
 
       .my-nav-index .navbar-nav .nav-item.d-flex {
         justify-content: unset;
+      }
+
+      .bg-img .introducao-row{
+      margin: 0;
       }
 
       /*=======SECTIONS=======*/
@@ -182,6 +178,10 @@
         gap: 5rem;
       }
 
+      .quem-somos .row .col-12 a > h1, .redes-sociais .row .col-12 a > h1{
+        margin-bottom: 2rem;
+      }
+
       @media (max-width: 768px) {
         .my-nav-index {
           width: 100%;
@@ -220,6 +220,10 @@
           display: initial;
         }
 
+        .quem-somos .row .col-12 a > h1, .redes-sociais .row .col-12 a > h1{
+        margin-bottom: 0;
+        }
+
         .social-media-links,
         .partners-links {
           display: grid;
@@ -243,8 +247,8 @@
   </head>
   <body>
     <nav class="navbar fixed-top my-nav-index navbar-expand-md">
-      <div class="container" id="container-nav-index">
-        <a href="" class="navbar-brand"
+      <div class="container" id="container-nav">
+        <a href="index.php" class="navbar-brand"
           ><img src="assets/logo.png" alt="logo-ti-batom" style="height: 45px"
         /></a>
 
@@ -270,7 +274,7 @@
         >
           <ul class="navbar-nav fs-5">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="">Home</a>
+              <a class="nav-link" aria-current="page" href="index.php" id="nav-home">Home</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -280,27 +284,27 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                id="sobre-nos"
+                id="nav-sobre-nos"
               >
                 Sobre Nós
               </a>
 
               <ul class="dropdown-menu fs-6">
-                <li><a class="dropdown-item" href="#">Quem Somos</a></li>
-                <li><a class="dropdown-item" href="#">Redes Sociais</a></li>
+                <li><a class="dropdown-item" href="quem-somos.php" id="nav-quem-somos">Quem Somos</a></li>
+                <li><a class="dropdown-item" href="redes-sociais.php" id="nav-redes-sociais">Redes Sociais</a></li>
               </ul>
             </li>
 
             <li class="nav-item">
-              <a href="" class="nav-link">Notícias</a>
+              <a href="noticias.php" class="nav-link" id="nav-noticias">Notícias</a>
             </li>
 
             <li class="nav-item">
-              <a href="" class="nav-link">Parceiros</a>
+              <a href="parceiros.php" class="nav-link" id="nav-parceiros">Parceiros</a>
             </li>
 
             <li class="nav-item d-flex">
-              <a href="" class="nav-link">
+              <a href="faca-parte-comunidade.php" class="nav-link" id="nav-faca-parte">
                 <button
                   class="btn btn-sm fs-5 btn-faca-parte"
                   style="background-color: var(--rosa-escuro)"
@@ -333,7 +337,7 @@
               reprehenderit explicabo libero beatae doloribus nemo, repudiandae
               doloremque iure, eum at praesentium eaque.
             </p>
-            <a href="">
+            <a href="faca-parte-comunidade.php">
               <button
                 class="btn btn-lg m-md-1 fs-3 btn-faca-parte"
                 style="background-color: var(--rosa-escuro)"
@@ -359,7 +363,7 @@
                 facilis assumenda eius placeat. Excepturi corporis sit eligendi,
                 vero labore exercitationem ad eum?
               </p>
-              <button type="button" class="btn btn-lg fs-2 text-uppercase">
+              <button type="button" class="btn btn-lg fs-2 text-uppercase" href="quem-somos.php">
                 Saiba Mais
               </button>
             </div>
@@ -376,9 +380,11 @@
       <section class="redes-sociais">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
-            <h1 class="display-3 fw-bold text-uppercase">
+            <a class="text-decoration-none" href="redes-sociais.php">
+              <h1 class="display-3 fw-bold text-uppercase">
               Nossas Redes Sociais
-            </h1>
+             </h1>
+            </a>
             <div class="social-media-links">
               <a href="" class="social-media-link"
                 ><img src="assets/logo_01.jpg" alt=""
@@ -396,7 +402,9 @@
       <section class="parceiros">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
+            <a class="text-decoration-none" href="parceiros.php">
             <h1 class="display-3 fw-bold text-uppercase">Nossos Parceiros</h1>
+           </a>
             <div class="partners-links">
               <a href="" class="partner-link"
                 ><img src="assets/logo_01.jpg" alt=""
@@ -483,95 +491,18 @@
       </section>
     </div>
 
-    <footer class="p-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div
-            class="my-col col-md-4 border-end border-end border-3 have-border"
-          >
-            <div class="brand">
-              <a class="text-decoration-none">
-                <img
-                  src="assets/logo.png"
-                  alt="logo-ti-batom"
-                  class="footer-brand mb-1"
-                />
-              </a>
-              <p>T.I de Batom</p>
-              <p>&copy; 2023</p>
-            </div>
-          </div>
+    <?php
+    
+     include "footer.html";
 
-          <div
-            class="my-col col-md-4 d-flex align-items-center text-center border-end border-3 have-border"
-          >
-            <div class="contact">
-              <ul class="nav flex-column">
-                <li class="nav-item d-flex align-items-center">
-                  <i
-                    class="uil uil-envelope nav-item-icon"
-                    style="margin-right: 1rem"
-                  ></i>
-                  <p class="m-0">nossoemail@contato.com</p>
-                </li>
+    ?>
 
-                <li class="nav-item d-flex align-items-center">
-                  <i
-                    class="uil uil-phone nav-item-icon"
-                    style="margin-right: 1rem"
-                  ></i>
-                  <p class="m-0">(00) 0000-0000</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="my-col col-md-4 d-flex align-items-center text-center">
-            <div class="follow">
-              <p>SEGUE A GENTE!</p>
-              <ul class="nav">
-                <li class="nav-item">
-                  <a href="" class="nav-link"
-                    ><i class="uil uil-instagram nav-item-icon"></i
-                  ></a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="" class="nav-link"
-                    ><i class="uil uil-facebook nav-item-icon"></i
-                  ></a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="" class="nav-link"
-                    ><i class="uil uil-twitter nav-item-icon"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+    <script src="script.js"></script>
     <script>
-      const linkSobreNos = document.querySelector("#sobre-nos");
-      const btnNavLink = document.querySelector("#btn-nav-link");
-      const containerNavIndex = document.querySelector("#container-nav-index");
+      const navActiveItem = document.querySelector('#nav-home');
 
-      btnNavLink.addEventListener("click", () => {
-        if (containerNavIndex.classList.contains("bg-container-nav")) {
-          containerNavIndex.classList.remove("bg-container-nav");
-        } else {
-          containerNavIndex.classList.add("bg-container-nav");
-        }
-      });
-
-      linkSobreNos.addEventListener("click", () => {
-        if (linkSobreNos.classList.contains("show")) {
-          linkSobreNos.classList.add("unshow");
-        }
-      });
+      navActiveItem.classList.add("nav-item-active");
     </script>
+
   </body>
 </html>
