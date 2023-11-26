@@ -330,8 +330,8 @@
             </h1>
             <h3 class="display-6 fw-bold" style="color: var(--branco)">
               Inspirando
-              <small style="color: var(--rosa-claro)">mulheres</small> na
-              <small style="color: var(--rosa-claro)">tecnologia</small>.
+              <span style="color: var(--rosa-claro)">mulheres</span> na
+              <span style="color: var(--rosa-claro)">tecnologia</span>.
             </h3>
             <p class="fs-4 lh-sm" style="color: var(--branco)">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora

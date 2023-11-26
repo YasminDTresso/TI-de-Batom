@@ -39,7 +39,62 @@
 
         .o-que-acreditamos{
           background-color: var(--preto-claro);
+          color: var(--branco);
         }
+
+        .o-que-acreditamos .row .col-12{
+          display: flex;
+          text-align: center;
+          justify-content: center;
+        }
+
+        .quem-somos .row .col-12{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 1rem;
+        }
+
+        .quem-somos .row .col-12 .single-text, .o-que-acreditamos .row .col-12 .text-box p{
+        width: 40vw;
+        }
+
+        .o-que-acreditamos .row .col-12 .text-box > h1, .missao-visao-valores .row .col-12 > h1{
+        margin-bottom: 2rem;
+        }
+
+        .o-que-acreditamos .row .col-12 .text-box > h1{
+          color: var(--rosa-escuro);
+        }
+
+        .missao-visao-valores .content-cards {
+        gap: 2rem;
+        }
+        
+      @media (max-width: 768px) {
+
+      /*=======SECTIONS=======*/
+      .quem-somos .row .col-12, .o-que-acreditamos .row .col-12{
+      display: initial;
+      }
+
+      .container-fluid section .row .col-12 {
+      padding: 5rem 2rem;
+      }
+
+      .quem-somos .row .col-12 .single-text,  .o-que-acreditamos .row .col-12 .text-box p{
+      width: 100%;
+      }
+
+      .content-cards{
+        flex-direction: column;
+      }
+
+      .content-cards .my-card{
+        margin-bottom: 2rem;
+      }
+
+      }
 
     </style>
 
@@ -55,7 +110,7 @@ include "nav.html";
 
   <div class="container-fluid g-0">
     <div class="row">
-      <section class="quem-somos">
+      <section class="quem-somos-banner">
       <div class="col-12">
         <div class="banner">
         <div class="title-banner">
@@ -71,8 +126,8 @@ include "nav.html";
 
     <section class="quem-somos">
       <div class="row">
-        <div class="col-12 d-flex">
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sint eligendi nemo officiis labore nostrum reiciendis velit voluptates provident perferendis, laboriosam placeat, beatae, commodi doloremque aspernatur distinctio? Sunt, voluptas et?</p>
+        <div class="col-12">
+           <p class="single-text fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sint eligendi nemo officiis labore nostrum reiciendis velit voluptates provident perferendis, laboriosam placeat, beatae, commodi doloremque aspernatur distinctio? Sunt, voluptas et?</p>
            <img src="assets/logo.png" alt="">
         </div>
       </div>
@@ -80,13 +135,13 @@ include "nav.html";
 
     <section class="o-que-acreditamos">
        <div class="row">
-         <div class="col-12 d-flex">
+         <div class="col-12">
 
           <img src="assets/logo.png" alt="">
 
-           <div class="text-box">
-            <h1 class="text-uppercase">O que acreditamos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ratione deleniti rerum unde velit enim voluptatem, voluptate, voluptatibus voluptates facere, laboriosam blanditiis dolorem provident ipsa quis odio. Culpa, quia amet.</p>
+           <div class="text-box text-center">
+            <h1 class="text-uppercase display-3">O que acreditamos</h1>
+            <p class="fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ratione deleniti rerum unde velit enim voluptatem, voluptate, voluptatibus voluptates facere, laboriosam blanditiis dolorem provident ipsa quis odio. Culpa, quia amet.</p>
            </div>
 
          </div>
@@ -94,24 +149,24 @@ include "nav.html";
     </section>
 
     <section class="missao-visao-valores">
-      <div class="row">
+      <div class="row text-center">
         <div class="col-12">
 
-        <h1>Missão, Visão e Valores</h1>
+        <h1 class="text-uppercase display-3"><span style="color: var(--rosa-escuro)">Missão</span>, <span style="color: var(--rosa-claro)">Visão</span> e <span style="color: var(--rosa-escuro)">Valores</span></h1>
 
         <div class="content-cards d-flex">
         <div class="my-card">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
+          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
           <img src="assets/logo.png" alt="">
         </div>
 
         <div class="my-card">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
+          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
           <img src="assets/logo.png" alt="">
         </div>
 
         <div class="my-card">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
+          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
           <img src="assets/logo.png" alt="">
         </div>
         
