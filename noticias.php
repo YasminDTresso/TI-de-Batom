@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <style>
         /*Colocar estilos exclusivos dessa page aqui! =)*/
+        main{
+          margin-top: 4rem;
+        }
     </style>
 
 </head>
@@ -40,7 +43,7 @@ include "nav.html";
 
 ?>
 
-<div class="main">
+<main>
   <div class="container-fluid g-0">
     <div class="row">
       <section class="noticias">
@@ -54,7 +57,7 @@ include "nav.html";
       </section>
     </div>
   </div>
-</div>
+</main>
 
 
 

@@ -31,6 +31,11 @@
 
     <style>
         /*Colocar estilos exclusivos dessa page aqui! =)*/
+
+        main{
+          margin-top: 4rem;
+        }
+        
     </style>
 
 </head>
@@ -41,7 +46,7 @@ include "nav.html";
 
 ?>
 
-<div class="main">
+<main>
 
   <div class="container-fluid g-0">
     <div class="row">
@@ -57,7 +62,7 @@ include "nav.html";
     </div>
   </div>
 
-</div>
+</main>
 
 
 

@@ -31,6 +31,10 @@
     <style>
         /*Colocar estilos exclusivos dessa page aqui! =)*/
 
+        main{
+          margin-top: 4rem;
+        }
+
         /*=======SECTIONS=======*/
 
         .container-fluid section .row .col-12 {
@@ -106,7 +110,7 @@ include "nav.html";
 
 ?>
 
-<div class="main">
+<main>
 
   <div class="container-fluid g-0">
     <div class="row">
@@ -179,7 +183,7 @@ include "nav.html";
 
   </div>
 
-</div>
+</main>
 
 
 <?php
