@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <style>
         /*Colocar estilos exclusivos dessa page aqui! =)*/
+        main{
+          margin-top: 4rem;
+        }
 
     </style>
 
@@ -41,7 +44,7 @@
 
     ?>
 
-    <div class="main">
+    <main>
       <div class="container-fluid g-0">
         <div class="row">
           <section class="faca-parte-comunidade">
@@ -55,7 +58,7 @@
           </section>
         </div>
       </div>
-    </div>
+   </main>
 
     <?php
     
