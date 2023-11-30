@@ -103,6 +103,10 @@ main{
     justify-content: unset;
 }
 
+.my-nav .navbar-nav{
+    align-items: center;
+}
+
 
 /*
 =======Footer=======
@@ -140,7 +144,7 @@ footer .have-border {
     padding-left: 0.3rem;
 }
 
-/*Samll screen*/
+/*Small screen*/
 @media (max-width: 768px) {
 
     /*
@@ -158,6 +162,10 @@ footer .have-border {
         margin-bottom: 0.2rem;
     }
 
+    .my-nav .navbar-nav{
+        align-items: normal;
+    }
+    
 
     /*
     =======Footer=======

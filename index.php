@@ -99,6 +99,11 @@
         justify-content: center;
       }
 
+      .my-nav .navbar-nav{
+        align-items: center;
+      }
+    
+
       .bg-img {
         background-image: url(assets/Rectangle\ 1.png);
         height: 100vh;
@@ -194,6 +199,11 @@
           margin-bottom: 0.2rem;
         }
 
+        .my-nav-index .navbar-nav{
+         align-items: normal;
+        }
+    
+
         .introducao-row {
           height: 100vh;
         }
@@ -272,9 +282,9 @@
           class="collapse navbar-collapse justify-content-around flex-grow-0"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav fs-5 align-items-center">
+          <ul class="navbar-nav fs-5">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.php" id="nav-home">Home</a>
+              <a class="nav-link"  href="index.php" id="nav-home">Home</a>
             </li>
 
             <li class="nav-item dropdown">
