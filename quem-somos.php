@@ -145,7 +145,7 @@ include "nav.html";
 
            <div class="text-box text-center">
             <h1 class="text-uppercase display-3">O que acreditamos</h1>
-            <p class="fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ratione deleniti rerum unde velit enim voluptatem, voluptate, voluptatibus voluptates facere, laboriosam blanditiis dolorem provident ipsa quis odio. Culpa, quia amet.</p>
+            <p class="fs-3">ALorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ratione deleniti rerum unde velit enim voluptatem, voluptate, voluptatibus voluptates facere, laboriosam blanditiis dolorem provident ipsa quis odio. Culpa, quia amet.</p>
            </div>
 
          </div>
@@ -155,22 +155,22 @@ include "nav.html";
     <section class="missao-visao-valores">
       <div class="row text-center">
         <div class="col-12">
-
+          
         <h1 class="text-uppercase display-3"><span style="color: var(--rosa-escuro)">Missão</span>, <span style="color: var(--rosa-claro)">Visão</span> e <span style="color: var(--rosa-escuro)">Valores</span></h1>
 
         <div class="content-cards d-flex">
         <div class="my-card">
-          <p class="fs-5">A T.I de Batom é um grupo sem vínculo político-partidário, que atua na inserção de mulheres no mercado de trabalho, voltado para à área de Tecnologia.</p>
+          <p class="fs-5">Com o objetivo de inserir mulheres no mercado de trabalho da T.I, queremos criar um espaço inclusivo para que possamos contrubuir com ideias, valoeres e visões diferentes, assim, incentivando mais mulheres a enfrentar seus medos e desafios dados no mundo profissional.</p>
           <img src="assets/logo.png" alt="">
         </div>
 
         <div class="my-card">
-          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
+          <p class="fs-5">Queremos promover discussões e ideias diversas com integração de mulheres no time, assim criar uma ambiente de valores femininos, e ferramentas desenvolvidas com base no ambinte formado, promovendo algo distinto do que é visto no mercado.</p>
           <img src="assets/logo.png" alt="">
         </div>
 
         <div class="my-card">
-          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
+          <p class="fs-5">A T.I de Batom acredita que somente com clareza, confiança, segurança, respeito, inovação e foco em nossos ideias, podemos desenvolver um ambiente distinto aos demais, e que possa integrar novos coloborados à nosso plantel. </p>
           <img src="assets/logo.png" alt="">
         </div>
         
