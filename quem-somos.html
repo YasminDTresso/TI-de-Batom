@@ -104,11 +104,79 @@
 
 </head>
 <body>
-<?php
-    
-include "nav.html";
 
-?>
+  <nav class="navbar fixed-top my-nav navbar-expand-md">
+    <div class="container" id="container-nav">
+      <a href="index.php" class="navbar-brand"
+        ><img src="assets/logo.png" alt="logo-ti-batom" style="height: 45px"
+      /></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="btn-nav-link"
+      >
+        <span
+          class="uil uil-bars"
+          style="font-size: 40px; color: var(--rosa-escuro)"
+        ></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-around flex-grow-0"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="nav-home">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              id="nav-sobre-nos"
+            >
+              Sobre Nós
+            </a>
+
+            <ul class="dropdown-menu fs-6">
+              <li><a class="dropdown-item" href="quem-somos.html" id="nav-quem-somos">Quem Somos</a></li>
+              <li><a class="dropdown-item" href="redes-sociais.html" id="nav-redes-sociais">Redes Sociais</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="noticias.html" class="nav-link" id="nav-noticias">Notícias</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="parceiros.html" class="nav-link" id="nav-parceiros">Parceiros</a>
+          </li>
+
+          <li class="nav-item d-flex">
+            <a href="faca-parte-comunidade.html" class="nav-link" id="nav-faca-parte">
+              <button
+                class="btn btn-sm fs-5 btn-faca-parte"
+                style="background-color: var(--rosa-escuro)"
+                type="button"
+              >
+                FAÇA PARTE
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <main>
 
@@ -186,11 +254,76 @@ include "nav.html";
 </main>
 
 
-<?php
+<footer class="p-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div
+        class="my-col col-md-4 border-3 have-border"
+      >
+        <div class="brand">
+          <a class="text-decoration-none" href="index.html">
+            <img
+              src="assets/logo.png"
+              alt="logo-ti-batom"
+              class="footer-brand mb-1"
+            />
+          </a>
+          <p>T.I de Batom</p>
+          <p>&copy; 2023</p>
+        </div>
+      </div>
 
-include "footer.html";
+      <div
+        class="my-col col-md-4 d-flex align-items-center text-center border-3 have-border"
+      >
+        <div class="contact">
+          <ul class="nav flex-column">
+            <li class="nav-item d-flex align-items-center">
+              <i
+                class="uil uil-envelope nav-item-icon"
+                style="margin-right: 1rem"
+              ></i>
+              <p class="m-0">nossoemail@contato.com</p>
+            </li>
 
-?>
+            <li class="nav-item d-flex align-items-center">
+              <i
+                class="uil uil-phone nav-item-icon"
+                style="margin-right: 1rem"
+              ></i>
+              <p class="m-0">(00) 0000-0000</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="my-col col-md-4 d-flex align-items-center text-center">
+        <div class="follow">
+          <p>SEGUE A GENTE!</p>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="" class="nav-link" href="https://www.instagram.com/tidebatom/"  target="_blank"
+                ><i class="uil uil-instagram nav-item-icon"></i
+              ></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="uil uil-facebook nav-item-icon"></i
+              ></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="uil uil-twitter nav-item-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 <script>

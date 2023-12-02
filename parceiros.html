@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!--CDN BOOTSTRAP - CSS E JAVASCRIPT-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--CDN UNICONS-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /*Colocar estilos exclusivos dessa page aqui! =)*/
+        main{
+          margin-top: 4rem;
+        }
+    </style>
+
+</head>
+<body>
+
+  <nav class="navbar fixed-top my-nav navbar-expand-md">
+    <div class="container" id="container-nav">
+      <a href="index.php" class="navbar-brand"
+        ><img src="assets/logo.png" alt="logo-ti-batom" style="height: 45px"
+      /></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="btn-nav-link"
+      >
+        <span
+          class="uil uil-bars"
+          style="font-size: 40px; color: var(--rosa-escuro)"
+        ></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-around flex-grow-0"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="nav-home">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              id="nav-sobre-nos"
+            >
+              Sobre Nós
+            </a>
+
+            <ul class="dropdown-menu fs-6">
+              <li><a class="dropdown-item" href="quem-somos.html" id="nav-quem-somos">Quem Somos</a></li>
+              <li><a class="dropdown-item" href="redes-sociais.html" id="nav-redes-sociais">Redes Sociais</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="noticias.html" class="nav-link" id="nav-noticias">Notícias</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="parceiros.html" class="nav-link" id="nav-parceiros">Parceiros</a>
+          </li>
+
+          <li class="nav-item d-flex">
+            <a href="faca-parte-comunidade.html" class="nav-link" id="nav-faca-parte">
+              <button
+                class="btn btn-sm fs-5 btn-faca-parte"
+                style="background-color: var(--rosa-escuro)"
+                type="button"
+              >
+                FAÇA PARTE
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<main>
+
+  <div class="container-fluid g-0">
+    <div class="row">
+      <section class="parceiros">
+      <div class="col-12">
+        <div class="banner">
+        <div class="title-banner">
+        <h1 class="text-uppercase">Nossos Parceiros</h1>
+        </div>
+        </div>
+      </div>
+      </section>
+    </div>
+  </div>
+
+</main>
+
+<footer class="p-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div
+        class="my-col col-md-4 border-3 have-border"
+      >
+        <div class="brand">
+          <a class="text-decoration-none" href="index.html">
+            <img
+              src="assets/logo.png"
+              alt="logo-ti-batom"
+              class="footer-brand mb-1"
+            />
+          </a>
+          <p>T.I de Batom</p>
+          <p>&copy; 2023</p>
+        </div>
+      </div>
+
+      <div
+        class="my-col col-md-4 d-flex align-items-center text-center border-3 have-border"
+      >
+        <div class="contact">
+          <ul class="nav flex-column">
+            <li class="nav-item d-flex align-items-center">
+              <i
+                class="uil uil-envelope nav-item-icon"
+                style="margin-right: 1rem"
+              ></i>
+              <p class="m-0">nossoemail@contato.com</p>
+            </li>
+
+            <li class="nav-item d-flex align-items-center">
+              <i
+                class="uil uil-phone nav-item-icon"
+                style="margin-right: 1rem"
+              ></i>
+              <p class="m-0">(00) 0000-0000</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="my-col col-md-4 d-flex align-items-center text-center">
+        <div class="follow">
+          <p>SEGUE A GENTE!</p>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="" class="nav-link" href="https://www.instagram.com/tidebatom/"  target="_blank"
+                ><i class="uil uil-instagram nav-item-icon"></i
+              ></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="uil uil-facebook nav-item-icon"></i
+              ></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="uil uil-twitter nav-item-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+      const navActiveItem = document.querySelector('#nav-parceiros');
+
+      navActiveItem.classList.add("nav-item-active");
+  </script>
+</body>
+</html>
