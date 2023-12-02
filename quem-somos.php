@@ -160,7 +160,7 @@ include "nav.html";
 
         <div class="content-cards d-flex">
         <div class="my-card">
-          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore quam possimus quasi et nemo, consequatur deserunt. Reprehenderit labore dolorem iusto voluptate doloremque non, quam architecto esse necessitatibus, possimus corrupti.</p>
+          <p class="fs-5">A T.I de Batom é um grupo sem vínculo político-partidário, que atua na inserção de mulheres no mercado de trabalho, voltado para à área de Tecnologia.</p>
           <img src="assets/logo.png" alt="">
         </div>
 
