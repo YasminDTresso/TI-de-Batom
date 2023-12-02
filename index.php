@@ -124,6 +124,10 @@
         justify-content: unset;
       }
 
+      .my-nav-index .navbar-nav{
+        align-items: center;
+      }
+
       .bg-img .introducao-row{
       margin: 0;
       }
