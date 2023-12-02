@@ -344,7 +344,10 @@
               <span style="color: var(--rosa-claro)">tecnologia</span>.
             </h3>
             <p class="fs-4 lh-sm" style="color: var(--branco)">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              Pensando nos desafios no mundo da T.I paras as mulheres,
+              o T.I de batom foi criado por Milena Ceron com o objetivo 
+              de incentivar a integração de mulheres que tenham o sonho de 
+              ingressar na área da Tecnologia aLorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
               possimus tenetur maxime illo accusamus vel voluptatum autem
               reprehenderit explicabo libero beatae doloribus nemo, repudiandae
               doloremque iure, eum at praesentium eaque.
